@@ -5,21 +5,21 @@
 class Chooz < Formula
   desc "Interactive terminal menu driven by a YAML file"
   homepage "https://github.com/sumpfgottheit/chooz"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.7/chooz_0.1.7_darwin_amd64.tar.gz"
-      sha256 "f0e6f0bef0cdf055554f1cae05bd8d8f2a922e1fc09510cd4a0ac70815428463"
+      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.8/chooz_0.1.8_darwin_amd64.tar.gz"
+      sha256 "4f4fe4f0934e983abf961b406b2be6e4fbab9b4b515e3e81381b794ecee4bd59"
 
       define_method(:install) do
         bin.install "chooz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.7/chooz_0.1.7_darwin_arm64.tar.gz"
-      sha256 "7e7ba6c12b5eabf17cc83fc419f53a2e1cbc2d3b1cb3083982220b9328fca62e"
+      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.8/chooz_0.1.8_darwin_arm64.tar.gz"
+      sha256 "4652fe63271bdef0205362cbc3db1ded1e4e7d3a9e31fd16845c3a6ffb2db8b6"
 
       define_method(:install) do
         bin.install "chooz"
@@ -29,15 +29,15 @@ class Chooz < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.7/chooz_0.1.7_linux_amd64.tar.gz"
-      sha256 "b8d303d6b3802a770d2b7994fe29b2904a603cf3a8bcfa7edec27127c3159ba9"
+      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.8/chooz_0.1.8_linux_amd64.tar.gz"
+      sha256 "39203719cc0e4040384b18424a4f8834e550cf512f6beb1b42adf0236608fdb2"
       define_method(:install) do
         bin.install "chooz"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.7/chooz_0.1.7_linux_arm64.tar.gz"
-      sha256 "c0093e3d6fecadfc947e83bf31eccc10326a0d3ded29c2270f57c4f22e3f428b"
+      url "https://github.com/sumpfgottheit/chooz/releases/download/v0.1.8/chooz_0.1.8_linux_arm64.tar.gz"
+      sha256 "f4e86467af65ee877a353fb645190e679e23d6e88b19e87233e5cb9d10ea069c"
       define_method(:install) do
         bin.install "chooz"
       end
